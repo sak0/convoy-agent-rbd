@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+function set_project_vars() {
+      PACKAGE=./gopath/src/$(<.package)
+      PROJECT=$(basename $PACKAGE)
+}
